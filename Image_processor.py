@@ -34,7 +34,7 @@ def brighten(p): return adjust_brightness(p, 30)
 #List of filters in the order 
 my_filters = [brighten, clip_values]
 
-#Run the pipeline!
+#Run the pipeline
 final_image = image_pipeline(raw_pixels, my_filters)
 
 print(f"Original Pixels: {raw_pixels}")
